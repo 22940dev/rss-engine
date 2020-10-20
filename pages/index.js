@@ -58,7 +58,13 @@ const Home = (props) => (
                                   <div className="flex items-center">
                                     <div className="ml-4">
                                       <div className="text-sm leading-5 font-medium text-gray-900 underline">
-                                        <a href={value.link}>{value.title}</a>
+                                        <a
+                                          href={value.link}
+                                          target="_blank"
+                                          rel="noreferrer noopener"
+                                        >
+                                          {value.title}
+                                        </a>
                                       </div>
                                       <div className="text-sm leading-5 text-gray-500">
                                         {value.name}
